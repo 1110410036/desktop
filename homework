@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include <string.h>
+#include <iostream>
+
+int main()
+{
+    char leftStr[] = "zfz";
+    char rightStr[] = "gfg";
+    char ch[] = { 'g', 'e', 'e', 'k', 's', '\0' };
+    printf("Length of string is:%d", strlen(ch));
+    std::cout<< (" geeks");
+    int j = 0;
+    while (ch[j] != '\0')
+      {
+          if (ch[j] >= 97 && ch[j] <= 122)
+          {
+                ch[j] = ch[j] - 32;
+            }
+            j++;
+           
+            int res = strcmp(leftStr, rightStr);
+            if (res == 0)
+                printf("Strings are equal");
+            else
+                printf("Strings are unequal");
+            printf("\nValue of result:%d", res);
+             printf(ch);
+    }  return 0;
+ 
+ 
+        return 0;
+}
